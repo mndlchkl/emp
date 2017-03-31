@@ -1,0 +1,44 @@
+<!DOCTYPE doctype html>
+<html ng-app="myApp">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js">
+        </script>
+        <div ng-include="" src="'inc/head.html'">
+        </div>
+    </head>
+    <body>
+        <script id="pages/home.html" type="text/ng-template">
+          <div id="home" >  
+           <h1>Home</h1>
+          <h3>{{message}}</h3>
+          </div>
+        </script>
+        <script id="pages/about.html" type="text/ng-template">
+            <h1>About</h1>
+            <h3>{{message}}</h3>
+        </script>
+        <script id="pages/blog.html" type="text/ng-template">
+            <h1>Blog</h1>
+            <h3>{{message}}</h3>
+
+        <h3>Esta es la sección para las noticias que se subiran</h3>
+        </script>
+        <div ng-include="" src="'inc/admin.html'">
+        </div>
+        <a href="#/">
+            Home
+        </a>
+        <a href="#/blog">
+            Blog
+        </a>
+        <a href="#/about">
+            About
+        </a>
+        <div ng-view="">
+        </div>
+        <script src="app.js">
+        </script>
+    </body>
+</html>
