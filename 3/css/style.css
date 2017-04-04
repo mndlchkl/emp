@@ -1,0 +1,93 @@
+header, main, footer {
+  	padding-left: 300px;
+  	/*font-size: 0px !important*/
+}
+@media only screen and (max-width : 992px) {
+   	header, main, footer {
+     	padding-left: 0;
+     	/*font-size: 0px !important*/
+   	}
+}
+@media only screen and (min-width: 992px) {
+  	nav {
+        display:none;
+   	}
+}
+.pad {
+	padding-top: 100px;
+}
+.pad-small {
+	padding-top: 50px;
+}
+.pad-redes {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.mar {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.parallax-container {
+  	height: 400px;
+}
+p, h5
+{
+    text-align: justify;
+}
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #80cbc4;
+}
+
+/* selected link */
+a:active {
+    color: #80cbc4;
+} 
+.side-nav li>a {
+	font-size: 20px;
+}
+a {
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.fa:link {
+    color: #1de9b6;
+}
+.fa:visited {
+    color: #1de9b6;
+}
+.fa:hover{
+	color: #a7ffeb;
+}
+.fa:active {
+    color: #a7ffeb;
+}
+.fa {
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+i {
+	color: #1de9b6;
+}
+footer {
+	padding-top: 0px !important
+}
+.mar-small {
+	margin-top: 40px;
+}
+.padcero {
+	padding: 0px !important
+}
+.marcero {
+	margin: 0px !important
+}
