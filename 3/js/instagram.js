@@ -18,9 +18,9 @@ $.ajax({
 				console.log(data2);
 				for(x in data2.data){
 					if (data2.data[x].type == "image"){
-						$('#insta-grid').append('<div class="col s12 m6 padfotos"><div class="marco"><div class="mascara"><a href="'+data2.data[x].link+'"><img class="responsive-img" src="'+data2.data[x].images.standard_resolution.url+'"> <div class="gallery-box-caption"><div class="gallery-box-content"><h4><i class="fa fa-heart"></i>&nbsp;'+data2.data[x].likes.count+'&emsp;<i class="fa fa-comment"></i>&nbsp;'+data2.data[x].comments.count+'</h4></div></div> </a></div></div></div>');
+						$('#insta-grid').append('<div class="col s12 m6 padfotos"><div class="marco"><div class="mascara"><a target="_blank" href="'+data2.data[x].link+'"><img class="responsive-img" src="'+data2.data[x].images.standard_resolution.url+'"> <div class="gallery-box-caption"><div class="gallery-box-content"><h4><i class="fa fa-heart"></i>&nbsp;'+data2.data[x].likes.count+'&emsp;<i class="fa fa-comment"></i>&nbsp;'+data2.data[x].comments.count+'</h4></div></div> </a></div></div></div>');
 					}else{
-						$('#insta-grid').append('<div class="col s12 m6 padfotos"><div class="marco"><div class="mascara"><a href="'+data2.data[x].link+'"><img class="responsive-img" src="'+data2.data[x].images.standard_resolution.url+'"> <div class="gallery-box-caption"><div class="gallery-box-content"><h4><i class="fa fa-play"></i></h4></div></div> </a></div></div></div>');
+						$('#insta-grid').append('<div class="col s12 m6 padfotos"><div class="marco"><div class="mascara"><a target="_blank" href="'+data2.data[x].link+'"><img class="responsive-img" src="'+data2.data[x].images.standard_resolution.url+'"> <div class="gallery-box-caption"><div class="gallery-box-content"><h4><i class="fa fa-play"></i></h4></div></div> </a></div></div></div>');
 					}
 				}
     			},
