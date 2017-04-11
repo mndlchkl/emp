@@ -11,15 +11,20 @@
 	<link type="text/css" rel="stylesheet" href="css/style.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!--Import font-awesome.css-->
-    <link type="text/css" rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+     
+    <link type="text/css" rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">  
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+
+
 </head>
 <body>
 	<div id="barra">
 		<ul id="barra-lateral" class="side-nav fixed teal white-text">
-			<li><h3 class="center-align"><img title="Inicio" style="cursor:pointer" id="linkhome" class="responsive-img  " src="images/logo-blanco3.svg" alt=""></h3></li>
+			<li><h5 class="center-align"><img title="Inicio" style="cursor:pointer" id="linkhome" class="responsive-img  " src="images/logo-blanco3.svg" alt=""></h5></li>
       		<li><a class="center-align waves-effect white-text menuefecto" id="linkblog" href="#!">Noticias</a></li>
       		<li><a class="center-align waves-effect white-text menuefecto" id="linkabout" href="#!">Acerca de</a></li>
+            <li><a class="center-align waves-effect white-text menuefecto" id="linkgallery" href="#!">Galeria</a></li>
       		<div class="pad">
                 <li class="center-align">
 				    <div class="row">
@@ -92,16 +97,28 @@
             $('#contenido').load("home.html");
 
             $('#linkhome').click(function(event){
+                 
                 $('.button-collapse').sideNav('hide');
                 $('#contenido').load("home.html");
+                   window.scrollTo(0, 0);
             });
             $('#linkblog').click(function(event){
+                  
                 $('.button-collapse').sideNav('hide');
                 $('#contenido').load("blog.html");
+                  window.scrollTo(0, 0);
             });
             $('#linkabout').click(function(event){
+                 
                 $('.button-collapse').sideNav('hide');
                 $('#contenido').load("about.html");
+                   window.scrollTo(0, 0);
+            });
+              $('#linkgallery').click(function(event){
+                 
+                $('.button-collapse').sideNav('hide');
+                $('#contenido').load("gallery.html");
+                   window.scrollTo(0, 0);
             });
 		});
 	</script>
