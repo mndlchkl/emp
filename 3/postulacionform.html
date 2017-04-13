@@ -1,0 +1,134 @@
+<div class=" ">
+    <div class="section no-pad-bot">
+        <br>
+            <br>
+                <h4 class="header center black-text">
+                    Postulación 
+                </h4>
+                <h5 class="header black-text">
+                    Datos de contacto 
+                </h5>
+            </br>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input class="validate" id="first_name" type="text">
+                                <label for="first_name">
+                                    Nombre
+                                </label>
+                            </input>
+                        </div>
+                        <div class="input-field col s6">
+                            <input class="validate" id="last_name" type="text">
+                                <label for="last_name">
+                                    Apellido
+                                </label>
+                            </input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input class="validate" id="email" type="email">
+                                <label data-error="mal ahi" data-success="right" for="email">
+                                    Correo
+                                </label>
+                            </input>
+                        </div>
+                        <div class="input-field col s6">
+                            <input class="validate" id="phone" type="number">
+                                <label for="phone">
+                                    Teléfono
+                                </label>
+                            </input>
+                        </div>
+                    </div>
+                    <h5 class="header black-text">
+                        Cuentanos acerca de
+                    </h5>
+                    <div class="row">
+                        <div class="input-field col s12 ">
+                            <!--  <i class="material-icons prefix"></i> -->
+                            <input class="validate" id="icon_telephone" type="tel">
+                                <label for="icon_telephone">
+                                    Nombre del proyecto musical
+                                </label>
+                            </input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 ">
+                            <label for="textarea1">
+                                Experiencia (500 caracteres).
+                            </label>
+                            <textarea class="materialize-textarea" id="textarea1">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 ">
+                            <label for="textarea2">
+                                    Motivaciones de participar (500 caracteres).
+                                <label for="textarea2">
+                                </label>
+                            </label>
+                            <textarea class="materialize-textarea" data-length="14" id="textarea2">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 ">
+                            <!--  <i class="material-icons prefix"></i> -->
+                            <input class="validate" id="icon_telephone" type="tel">
+                                <label for="icon_telephone">
+                                    Comparte un link de tu trabajo musical
+                                </label>
+                            </input>
+                        </div>
+                    </div>
+                    <button class="waves-effect waves-light btn mar-big" id="calcular" type="button">
+                        Listo
+                    </button>
+                </form>
+            </div>
+        </br>
+    </div>
+</div>
+<!--  <div class="col s12">
+                    This is an inline input field:
+                    <div class="input-field inline">
+                        <input class="validate" id="email" type="email">
+                            <label data-error="wrong" data-success="right" for="email">
+                                Email
+                            </label>
+                        </input>
+                    </div>
+                </div> -->
+<!-- <div class="parallax">
+        <img alt="Unsplashed background img 2" src="images/3dsoulwave.gif"/>
+    </div> -->
+<script>
+    $(document).ready(function(){
+  $(document).ready(function(){
+  //  $('.parallax').parallax();
+  // });
+   $('#textarea1').val('New Text');
+  $('#textarea1').trigger('autoresize');
+    });
+</script>
+<style type="text/css">
+    .parallax-container {
+  height: 800px;
+}
+.mar-small {
+  margin-top: 20px;
+}
+
+ 
+
+.header{
+
+font-family: 'Montserrat', sans-serif;
+ 
+}
+</style>

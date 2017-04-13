@@ -1,13 +1,9 @@
-<style type="text/css">
-        .header{
-font-family: 'Montserrat', sans-serif;
-        }
-</style>
-
+ 
 <div class="parallax-container">
     <div class="parallax"><img src="images/prx1.jpg"></div>
-    <h1 class="header" style="color:white;text-align: center;padding-top: 20%; ">
-    Laboratorio colaborativo musical Sur</h1>
+        <h2 class="header" id="postular" style="cursor:pointer;color:white;text-align: left;padding-top: 7%;"> + Convocatoria.</h2>
+         <h1 class="header" style="color:white;text-align: center;padding-top: 10%; ">  Laboratorio colaborativo musical Sur</h1>
+
 </div>  
 
   
@@ -16,7 +12,9 @@ font-family: 'Montserrat', sans-serif;
     <div class="section">
         <div class="row">
             <div class="col s12">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etasdf iam pelle ntesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. asdf Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, asdf posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, adf condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique s erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                <p>"La música como motor de desarrollo social"
+                    ECPM SUR es un espacio inclusivo y colaborativo donde los jóvenes beneficiarios tendrán una 
+                    educación integral y de calidad en el ámbito musical, propiciando un cambio favorable en el desarrollo social y cultural de nuestra región y los músicos de la escena local.Este proyecto se puede realizar gracias al apoyo de Corfo y el Gobierno de Chile.</p>
             </div>
         </div>
     </div>
@@ -30,7 +28,7 @@ font-family: 'Montserrat', sans-serif;
     <div class="section">
         <div class="row">
             <div class="col s12">
-                <p>Lorem ipsum dolor sit amet, consectetur asd sssdfeeesdf asdfadipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque asdf tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem asd fn e que, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi asdf massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                <p>ECPM SUR es un espacio formativo para artistas musicales de la X Región, en el que se propone expandir la formación más allá de la ejecución musical, integrando herramientas relacionadas con tecnología, marketing, puesta en escena y liderazgo. Con estas actividades el proyecto busca que los estudiantes se permitan potenciar y ampliar sus habilidades y así estar preparados para desafíos mayores. Al tratarse de un proyecto colaborativo fue necesaria la opinión y participación de actores relevantes en la escena musical local, artistas emergentes y la comunidad puertomontina fueron reunidos en tres Focus Group , además se pudo aplicar una encuesta a 370 personas y se rescataron opiniones de festivales y eventos masivos donde asistieron principalmente jóvenes. Todas estas tareas arrojaron resultados que fueron de suma importancia para llegar a la propuesta final, la cual define el desarrollo del proyecto en un periodo de 10 meses, en los cuales se contempla la realización de: Taller de Producción Musical, Taller de Composición Musical, Master Class, y una Formación Técnica Extendida, todas éstas desarrollados por expertos en sus materias. Para la finalización en su primer ciclo, este tiene por objetivo la producción de un video clip en estudio por banda más la producción de un single por proyecto musical.</p>
             </div>
         </div>
     </div>
@@ -44,7 +42,13 @@ font-family: 'Montserrat', sans-serif;
     <div class="section">
         <div class="row">
             <div class="col s12">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                <p>Bases de postulación <br>    
+                Tanto para solistas, duos o bandas, el modo de participar es a traves de un proceso de
+                   audiciones que determinarán a los 10 artistas o bandas seleccionadas para pertenecer al programa.</p>
+                   <br> 
+                
+
+
             </div>
         </div>
     </div>
@@ -56,5 +60,14 @@ font-family: 'Montserrat', sans-serif;
     $(document).ready(function(){
         $('.parallax').parallax();
       //  $('#instagram').load("gallery.html");
+ 
+         $('#postular').click(function(event){
+          
+                //$('.button-collapse').sideNav('hide');
+             $('#contenido').load("postulacionform.html");
+             window.scrollTo(0, 0);
+        });
+ 
+
     });
 </script>
