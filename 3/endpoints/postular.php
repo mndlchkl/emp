@@ -15,44 +15,30 @@ $music_work_url = $_POST['music_link'];
  
 $servername = "localhost";
 $username = "root";
-$password = "godzuki";
+$password = "eb436ec1de19aef9d339deffa9aa2013804a7e225a7ccc21";
 $dbname = "ecpm";
  
 
-$link = mysql_connect($servername, $username, $password)
-    or die('No se pudo conectar: ' . mysql_error());
-//echo '(Conexión exitosa)';
-mysql_select_db($dbname) or die('No se pudo seleccionar la base de datos'); 
-mysql_set_charset("utf8"); 
-
-
+$mysqli = new mysqli($servername,$username,$password,$dbname);
+mysqli_set_charset($mysqli,"utf8");
+ 
 ////// REVISAR SI EL RUT YA EXISTE
- 
 $checkrut=("select * from aplicant where rut =  '".$rut."' ");
-$result1= mysql_query( $checkrut)
-      or die(mysql_error());
- 
-if($result1 === FALSE) {
-echo mysql_errno($link);
-  //  die(mysql_error()) ;    
-}else{
-	  $guardar = mysql_num_rows ($result1);
-   
-   // echo   "Postulación recibida.";   
-}
+ if($result1 = $mysqli->query($checkrut)){ 
+  		 $guardar = mysql_num_rows ($result1); 
+ }
 
 //////////////////AHORA SI GUARDAR
 if ($guardar==0){
 	$query=("insert into aplicant(name, last_name, email, phone, rut, project_name, experience, motivations, music_work_url) 
 				values('".$name."', '".$last_name."', '".$email."','".$phone."','".$rut."','".$project."','".$experience."', '".$motivations."', '".$music_work_url."' ) ");    
 
-	$result= mysql_query( $query)
-	      or die(mysql_error());
+	 if($result = $mysqli->query($query)){ 
+  		  echo   "Postulación recibida."; 
+	 }else echo $mysqli->errno;
+
 	 
-	if($result === FALSE) {
-	echo mysql_errno($link);
-	  //  die(mysql_error()) ;    
-	}else{
+	 
 	       
 	    echo   "Postulación recibida.";   
 	}
