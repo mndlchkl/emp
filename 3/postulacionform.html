@@ -1,9 +1,22 @@
-<div class="section no-pad-bot">
-    <br>
+
+ <div class="parallax-container">
+    <div class="parallax"><img src="images/parallax1.jpg"></div>
+    <h2 class="header" style="color:white;text-align: center;padding-top: 20%">Postulación</h2>
+</div> 
+
+  
+ 
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12">
+               <!--   
+                <br>
         <br>
             <h4 class="header center black-text">
                 Postulación
-            </h4>
+            </h4>-->
+            <br>
             <h5 class="header black-text">
               &nbsp &nbsp  Datos de contacto
             </h5>
@@ -102,7 +115,12 @@
             </span>
         </div>
     </br>
+
+            </div>
+        </div>
+    </div>
 </div>
+
 <!--  <div class="col s12">
                     This is an inline input field:
                     <div class="input-field inline">
@@ -118,7 +136,7 @@
     </div> -->
 <script>
     $(document).ready(function(){
-
+$('.parallax').parallax();
 $('#experience').keyup(function () {
   var max = 1500;
   var len = $(this).val().length;
@@ -178,7 +196,7 @@ $( 'form' ).submit(function( event ) {
 });
 
 </script>
-
+<!--  
 
 <style type="text/css">
     .parallax-container {
@@ -194,3 +212,4 @@ font-family: 'Montserrat', sans-serif;
  
 }
 </style>
+-->
