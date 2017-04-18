@@ -44,7 +44,7 @@
                         Galeria
                     </a>
                 </li>
-                <div class="pad">
+                <div class="pad-menu">
                     <li class="center-align">
                         <div class="row">
                             <a class="tooltipped" data-delay="50" data-position="bottom" data-tooltip="Síguenos en Twitter" href="#!">
@@ -55,7 +55,7 @@
                                 <i aria-hidden="true" class="pad-redes fa fa-facebook fa-2x">
                                 </i>
                             </a>
-                            <a class="tooltipped" data-delay="50" data-position="bottom" data-tooltip="Síguenos en Instagram" href="https://www.instagram.com/lab_musicalsur/" target="_blank">
+                            <a class="tooltipped" data-delay="50" data-position="bottom" data-tooltip="Síguenos en Instagram" href="https://www.instagram.com/ecpm_sur/" target="_blank">
                                 <i aria-hidden="true" class="pad-redes fa fa-instagram fa-2x">
                                 </i>
                             </a>
@@ -70,9 +70,9 @@
                         </div>
                     </li>
                 </div>
-                <div class="pad-small">
-                    <li>
-                        <p class="center-align mar">
+                <div>
+                    <li class="center-align pad-small">
+                        <div>
                             <a class="modal-trigger" href="#modal1">
                                 Politica de privacidad
                             </a>
@@ -80,7 +80,11 @@
                             <a href="#!">
                                 BAJ
                             </a>
-                        </p>
+                            <span class="separador">|</span>
+                            <a class="modal-trigger" href="#modal2">
+                                Contacto
+                            </a>
+                        </div>
                     </li>
                 </div>
             </ul>
@@ -112,36 +116,92 @@
                         General
                     </h5>
                     <p>
-                        Al acceder al sitio www.. el usuario esta aceptando y reconoce que ha revisado y esta de acuerdo con su Política de Privacidad.
+                        Al acceder al sitio www.ecpm.cl el usuario esta aceptando y reconoce que ha revisado y esta de acuerdo con su Política de Privacidad.
                     </p>
                     <p>
-                        Nos reservamos el derecho a modificar la presente política de privacidad y será responsabilidad del usuario la lectura y acatamiento de esta cada vez que ingrese al sitio.
+                        Nos reservamos el derecho de modificar la presente política de privacidad y será responsabilidad del usuario la lectura y acatamiento de esta, cada vez que se ingrese al sitio.
                     </p>
                     <br>
                         <h5>
                             Acceso a la Información
                         </h5>
                         <p>
-                            Los contenidos del sitio www.. tienen carácter gratuito para los usuarios.
+                            Los contenidos del sitio www.ecpm.cl tienen carácter gratuito para los usuarios.
                         </p>
                         <br>
                             <h5>
                                 Uso de la información
                             </h5>
                             <p>
-                                Todos los derechos referidos a www.. y sus contenidos, incluidos los de propiedad intelectual, pertenecen a .
+                                Todos los derechos referidos a www.ecpm.cl y sus contenidos, incluidos los de propiedad intelectual, pertenecen a ECPM SUR.
                             </p>
                             <p>
-                                Al acceder al sitio, el visitante tendrá derecho a revisar toda la información que esté disponible en él, sólo pudiendo utilizarla para fines particulares y no comerciales. Sin perjuicio de lo anterior, xxxx no se hace responsable por la veracidad o exactitud de la información contenida en los enlaces a otros sitios Web o que haya sido entregada por terceros.
+                                Al acceder al sitio, el visitante tendrá derecho a revisar toda la información que esté disponible en él, sólo pudiendo utilizarla para fines particulares y no comerciales. Sin perjuicio de lo anterior, ECPM SUR no se hace responsable por la veracidad o exactitud de la información contenida en los enlaces a otros sitios Web o que haya sido entregada por terceros.
                             </p>
                             <p>
-                                La xxx autoriza la utilización o reproducción total o parcial de los contenidos e información de su portal, indicando claramente su fuente u origen.
+                                ECPM SUR autoriza la utilización o reproducción total o parcial de los contenidos e información de este portal, indicando claramente su fuente u origen.
                             </p>
                         </br>
                     </br>
                 </br>
             </div>
             <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-green btn-flat black-text" href="#!">
+                    Aceptar
+                </a>
+            </div>
+        </div>
+        <!-- Modal Structure -->
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <h4>
+                    Contacto
+                </h4>
+                <br>
+                
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" id="textbox1">
+                                <label for="textbox1">Nombre</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="text" id="textbox2">
+                                <label for="textbox2">Apellido</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" id="textbox3">
+                                <label for="textbox3">Correo</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" id="textbox4">
+                                <label for="textbox4">Asunto</label>
+                            </div>
+                        </div>
+                        <br>
+                        <h5>
+                            ¿En que te podemos ayudar?
+                        </h5>
+                        <br> 
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Descripción</label>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat black-text" href="#!">
+                    Cancelar
+                </a>
                 <a class="modal-action modal-close waves-effect waves-green btn-flat black-text" href="#!">
                     Aceptar
                 </a>

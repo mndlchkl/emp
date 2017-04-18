@@ -1,5 +1,5 @@
 var token = '4903487647.4eec902.f2d19fbaa8084c50883f4480a8b70dae',
-    username = 'lab_musicalsur',
+    username = 'ecpm_sur',
     num_photos = 9;
  
 $.ajax({

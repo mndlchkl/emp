@@ -7,6 +7,9 @@ header, main, footer {
     padding-left: 0;
     /*font-size: 0px !important*/
   }
+  .separador {
+    display:none;
+  }
 }
 @media only screen and (min-width: 992px) {
   nav {
@@ -16,8 +19,11 @@ header, main, footer {
 .pad {
 	padding-top: 100px;
 }
+.pad-menu {
+  padding-top: 70px;
+}
 .pad-small {
-	padding-top: 30px;
+	padding-top: 15px;
 }
 .pad-redes {
 	padding-left: 10px;
