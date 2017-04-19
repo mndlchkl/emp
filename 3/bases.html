@@ -1,0 +1,91 @@
+ <div style="padding: 5px">
+ 	
+<h3 class="header center" > BASES Y PROCESO DE INSCRIPCIÓN</h3>
+
+<ul class="collection">
+      <li class="collection-item"><h4>1 - Postulación</h4> 
+Las y los interesados deben postular a través de un formulario ubicado al final de estas bases,
+completando todos los datos requeridos y adjuntando los links de sus proyectos en plataformas
+virtuales como: Youtube, SoundCloud, Spotify etc. Las postulaciones estarán abiertas desde el 20
+de abril hasta el 12 de mayo del 2017.</li>
+      <li class="collection-item"><h4>2 - Requisitos Generales:</h4> 
+Tener entre 14 y 24 de edad
+Tener conocimiento previo en la ejecución de algún instrumento
+Tener un proyecto musical de hasta 8 personas
+Registrar domicilio en la región de Los Lagos
+Tener disponibilidad para cursar un programa formativo que se extenderá desde mayo hasta el
+mes de noviembre del 2017.</li>
+      <li class="collection-item"><h4>3 - Preselección y audiciones</h4> 
+El objetivo de la primera preselección es apreciar las habilidades en el ámbito musical de cada
+proyecto y seleccionar los que cumplan distintas capacidades como: interés, sonido propio,
+composición, melodía, armonía e instrumentación.Se evaluará el material requerido en el
+formulario.</li>
+      <li class="collection-item"><h4>3.2 Audición</h4> 
+La segunda preselección contempla la presentación en vivo de los 15 proyectos seleccionados para
+este proceso, donde se evaluarán aspectos como: puesta en escena, dinámica grupal, composición
+e identidad musical.</li>
+       <li class="collection-item"><h4>Sobre el jurado</h4> 
+Ricardo Sarabia: Músico, arreglista y compositor.
+Elías Negrón: Músico, productor musical.
+Eduardo Navarro: Músico, fotógrafo y productor técnico de Balmaceda Arte Joven Los Lagos.
+Silvia Tapia: Músico y Licenciada en música y sonido de UNIACC.
+Daniel Oñate: Músico, interprete superior en flauta, profesor en Balmaceda arte joven, Ulagos.</li>
+        <li class="collection-item"><h4>2.2 Selección</h4> 
+Se dan a conocer los 10 proyectos seleccionados en la web de ECPM Sur. Se agendarán entrevistas
+personales con los estudiantes seleccionados y se les hará entrega de carta de compromiso con
+detalles del proyecto. Las entrevistas personales serán guiadas por el equipo de ECPM Sur y se
+confirmarán vía correo electrónico.</li>
+         <li class="collection-item"><h4>3 - Formación</h4> 
+El proceso de formación se inicia en el mes de mayo y finaliza en noviembre de 2017, el cual se
+divide en: Taller de Producción Musical, Taller de Composición Musical, Master Class, Laboratorio
+de Producción Musical y Formación Técnica Extendida, cada uno con horas estipuladas y
+disciplinas correspondientes, a las que deberán asistir todos los estudiantes.
+Durante esta etapa además se valorará la perseverancia, responsabilidad, compromiso y trabajo
+en equipo que demuestre cada estudiante con el proceso de formación.</li>
+          <li class="collection-item"><h4> 4 - Grabación</h4>
+En este proceso los estudiantes tendrán acceso a todas las tecnologías e implementos presentes
+en el estudio de ECPM Sur, para que junto al equipo se realice la grabación y masterización
+profesional de un tema musical por proyecto.
+Además los estudiantes deberán grabar un registro audiovisual por proyecto, donde se recopile el
+último proceso de ECPM Sur.</li>
+           <li class="collection-item"><h4> 5 - Certificación</h4>
+Luego de finalizar el proceso formativo, los y las estudiantes recibirán un certificado que acredite
+el número de horas realizadas, las áreas de especialización y el número de presentaciones
+realizadas en el transcurso del año destacando sus competencias en alguna áreas específicas./li>
+            <li class="collection-item"><h4>6 - Quienes no pueden participar</h4>
+
+Aquellas bandas que ya tienen un sello discográfico.</li>
+    </ul>
+
+<br><br>
+ <div class=" center row">
+       <div class="input-field col s12 ">
+                 <a  >
+                     <input  id="chkbxAceptaTerminos2"   type="checkbox" class="filled-in "    />
+                        <label for="chkbxAceptaTerminos2">He leido las bases y acepto los términos de postulación. <span style="color:red" id="msgTerminos2"></span> </label>
+                </a>
+           </div>
+     </div>
+<br>
+</div>
+
+<script>
+$(document).ready(function(){
+	$('#chkbxAceptaTerminos2').prop('checked', false);
+
+
+
+
+    $('#chkbxAceptaTerminos2').click(function(event){
+            
+            $('#contenido').load('postulacionform.html', function() {
+			      $(this).show("slow",function(){
+			      	window.scrollTo(0, 0);
+			      });
+			      // 
+			    });
+
+ 
+    });
+});
+</script>

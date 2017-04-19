@@ -1,18 +1,9 @@
 
- <div class="parallax-container">
-    <div class="parallax"><img src="images/postu.jpg"></div>
-    <h2 class="header" style="color:black; text-align: center;padding-top: 5%">Formulario de postulación</h2>
-      
-  <h5 class="header" style="margin-right:10%;margin-left:10%;color:black; text-align: justify;padding-top: 10%">
-      Completa todos los campos solicitados y lee bien las bases antes de postular</h5>
- <button id="postular" class="btn waves-effect waves-light green right " style="margin-right: 10%" type="submit">Revisa las bases<i class="material-icons right"  ">new_releases</i></button>
-
-    
-</div> 
 
   
  
 <div class="container">
+<div class="header center"> <h2 >Formulario de postulación</h2> </div>
     <div class="section">
         <div class="row">
             <div class="col s12">
@@ -141,14 +132,14 @@
                     </div>
                 </div>
 
-                 <div class="row">
+          <!--        <div class="row">
                     <div class="input-field col s12 ">
                          <a class="modal-trigger" href="#modal3">
                             <input  required id="chkbxAceptaTerminos"   type="checkbox" class="filled-in "    />
                             <label for="chkbxAceptaTerminos">Términos de postulación. <span style="color:red" id="msgTerminos"></span> </label>
                         </a>
                         </div>
-                 </div>
+                 </div> -->
 
                    <div class="row">
                      <div class="input-field col s12 ">
@@ -207,6 +198,10 @@
     </div> -->
 <script>
 $(document).ready(function(){
+ 
+   
+    
+ 
 
 $('#chkbxAceptaTerminos').prop('checked', false);
 $('#aceptaTerminos').click(function(){
@@ -244,7 +239,7 @@ $('#motivations').keyup(function () {
 
  $('#motivations').val('');
   $('#experience').val('');
-var request;
+
 
 $('#postular').click(function(){
 if ( !$('#chkbxAceptaTerminos').is(':checked')) {
@@ -255,7 +250,7 @@ if ( !$('#chkbxAceptaTerminos').is(':checked')) {
 });
 
 
-
+var request;
 $( 'form' ).submit(function( event ) {
 
 
