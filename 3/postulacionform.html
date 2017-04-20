@@ -1,135 +1,93 @@
+<div class="parallax-container2 valign-wrapper" style="padding-top: 80px;">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row">
 
+        <ul class="collection">
+          <li class="collection-item"><h4>Formulario de postulación</h4></li>
+          <li class="collection-item">
 
-  
- 
-<div class="container">
-<div class="header center"> <h2 >Formulario de postulación</h2> </div>
-    <div class="section">
-        <div class="row">
-            <div class="col s12">
-               <!--   
-                <br>
-        <br>
-            <h4 class="header center black-text">
-                Postulación
-            </h4>-->
-            <br>
-            <h5 class="header black-text">
-              <i class=" small material-icons prefix">contacts</i>
-              &nbsp &nbsp  Datos de contacto
-            </h5>
-        </br>
-        <div class="row">
-            <form action="/" id="postForm">
+            <div class="row" style="margin:10px;">
+              
+              <h5 class="header black-text" style="margin-bottom:30px;"><i class="small material-icons prefix">contacts</i>&nbsp Datos de contacto</h5>
+
+              <form action="/" id="postForm">
                 <div class="row">
-                    <div class="input-field col s6">
-                        <input required class="validate" name="first_name" id="first_name" type="text">
-                            <label for="first_name">
-                                Nombre
-                            </label>
-                        </input>
-                    </div>
-                    <div class="input-field col s6">
-                        <input required class="validate" id="last_name" name="last_name" type="text">
-                            <label for="last_name">
-                                Apellido
-                            </label>
-                        </input>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input required class="validate" id="email" name="email" type="email">
-                            <label data-error="mal ahi" data-success="" for="email">
-                                Correo
-                            </label>
-                        </input>
-                    </div>
-                    <div class="input-field col s6">
-                        <input required class="validate" id="phone" name="phone" type="number">
-                            <label for="phone">
-                                Teléfono
-                            </label>
-                        </input>
-                    </div>
-                </div>
-                  <div class="row">
-                        <div class="input-field col s6">
-                        <input   oninput="checkRut(this) " required class="validate" id="rut" name="rut" type="text"  >
-                            <label   for="rut">
-                                Rut 
-                            </label>
-                        </input>
-                      </div>  
+                  <div class="input-field col s6">
+                    <input required class="validate" name="first_name" id="first_name" type="text">
+                      <label for="first_name">Nombre</label>
+                    </input>
                   </div>
-                <h5 class="header black-text">
-                 <i class=" small material-icons prefix">mode_edit</i>
-                   &nbsp &nbsp Cuentanos acerca de
-                    <br>
-                    <br>
-                </h5>
-                <div class="row">
-                    <div class="input-field col s12 ">
-                        <!--  <i class="material-icons prefix"></i> -->
-                        <input required class="validate" id="project_name" name="project_name" type="text">
-                            <label for="project_name">
-                                Nombre del proyecto musical
-                            </label>
-                        </input>
-                    </div>
+                  <div class="input-field col s6">
+                    <input required class="validate" id="last_name" name="last_name" type="text">
+                      <label for="last_name">Apellido</label>
+                    </input>
+                  </div>
                 </div>
+                
                 <div class="row">
-                    <div class="input-field col s12 ">
-                        <label for="experience">
-                            Experiencia (1500 caracteres max). <span id="experience_count"></span>
-                        </label>
-                        <textarea required form="postForm" class="materialize-textarea" id="experience" name="experience">
-                        </textarea>
-                    </div>
+                  <div class="input-field col s6">
+                    <input required class="validate" id="email" name="email" type="email">
+                      <label data-error="mal ahi" data-success="" for="email">Correo</label>
+                    </input>
+                  </div>
+                  <div class="input-field col s6">
+                    <input required class="validate" id="phone" name="phone" type="number">
+                      <label for="phone">Teléfono</label>
+                    </input>
+                  </div>
                 </div>
+                  
                 <div class="row">
-                    <div class="input-field col s12 ">
-                        <label for="motivations">
-                            Motivaciones de participar (1500 caracteres max). <span id="motivations_count"></span>
-                             
-                        </label>
-                        <textarea required  form="postForm" class="materialize-textarea" data-length="14" id="motivations" name="motivations">
-                        </textarea>
-                    </div>
+                  <div class="input-field col s6">
+                    <input oninput="checkRut(this) " required class="validate" id="rut" name="rut" type="text"  >
+                      <label for="rut">Rut</label>
+                    </input>
+                  </div>  
                 </div>
+                
+                <h5 class="header black-text" style="margin-bottom:30px;"><i class="small material-icons prefix">mode_edit</i>&nbsp Cuentanos acerca de</h5>
+                
                 <div class="row">
-                    <h5 class="header black-text">
-                      <i class=" small material-icons prefix">input</i>
-                   &nbsp &nbsp Para que conozcamos más tu trabajo
-                    <br>
-                    <br>
-                    <div class="input-field col s4 ">
-                        <!--  <i class="material-icons prefix"></i> -->
-                       
-                        <input required name="music_link" class="validate" id="music_link" type="text" >
-                            <label for="music_link">
-                                Comparte un link 
-                            </label>
-                        </input>
-                    </div>
-                     <div class="input-field col s4 ">
-                        <!--  <i class="material-icons prefix"></i> -->
-                        <input name="music_link2" class="validate" id="music_link2" type="text" >
-                            <label for="music_link2">
-                                Comparte otro link 
-                            </label>
-                        </input>
-                    </div>
-                     <div class="input-field col s4 ">
-                        <!--  <i class="material-icons prefix"></i> -->
+                  <div class="input-field col s12 ">
+                    <input required class="validate" id="project_name" name="project_name" type="text">
+                      <label for="project_name">Nombre del proyecto musical</label>
+                    </input>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="input-field col s12 ">
+                    <label for="experience">Experiencia (1500 caracteres max). <span id="experience_count"></span></label>
+                    <textarea required form="postForm" class="materialize-textarea" id="experience" name="experience"></textarea>
+                  </div>
+                </div>
 
-                        <input name="music_link3" class="validate" id="music_link3" type="text" >
-                           
-                            <label for="music_link3">
-                                Comparte otro link 
-                            </label>
-                        </input>
-                    </div>
+                <div class="row">
+                  <div class="input-field col s12 ">
+                    <label for="motivations">Motivaciones de participar (1500 caracteres max). <span id="motivations_count"></span></label>
+                    <textarea required  form="postForm" class="materialize-textarea" data-length="14" id="motivations" name="motivations"></textarea>
+                  </div>
+                </div>
+                
+                <h5 class="header black-text" style="margin-bottom:30px;"><i class=" small material-icons prefix">input</i>&nbsp Para que conozcamos más tu trabajo</h5>
+
+                <div class="row">
+                  <div class="input-field col s4 ">
+                    <input required name="music_link" class="validate" id="music_link" type="text" >
+                      <label for="music_link">Comparte un link</label>
+                    </input>
+                  </div>
+                  <div class="input-field col s4 ">
+                    <input name="music_link2" class="validate" id="music_link2" type="text" >
+                      <label for="music_link2">Comparte otro link</label>
+                    </input>
+                  </div>
+                  <div class="input-field col s4 ">
+                    <input name="music_link3" class="validate" id="music_link3" type="text" >
+                      <label for="music_link3">Comparte otro link</label>
+                    </input>
+                  </div>
                 </div>
 
           <!--        <div class="row">
@@ -141,25 +99,30 @@
                         </div>
                  </div> -->
 
-                   <div class="row">
-                     <div class="input-field col s12 ">
-                <input required class="waves-effect waves-light btn mar-big" id="postular" type="submit">
-                </input>
-                    </div>
+                <div class="row">
+                  <div class="input-field col s12 center">
+                    <input required class="waves-effect waves-light btn mar-big" id="postular" type="submit"></input>
+                  </div>
                 </div>
-            </form>
-              
-           
 
-              
-
-        </div>
-    </br>
-
+              </form>
+            
             </div>
-        </div>
+          
+          </li>
+          <li class="collection-item">
+            <p>¡¡¡ATENCION!!! - Antes de enviar su postulación, asegurese de haber completado cada uno de los campos del presente formulario con información fidedigna.</p>
+          </li>
+        </ul>
+
+      </div>
+
     </div>
+  </div>
+  <div class="parallax"><img src="images/bases.jpg" alt="Unsplashed background img 2"></div>
 </div>
+
+
 
 
  <!-- Modal Structure -->
@@ -200,7 +163,6 @@
 $(document).ready(function(){
  
    
-    
  
 
 $('#chkbxAceptaTerminos').prop('checked', false);
@@ -290,6 +252,14 @@ $( 'form' ).submit(function( event ) {
 });
 
 </script>
+
+<style type="text/css">
+  .parallax-container2 {
+    position: relative;
+    overflow: hidden;
+  }
+</style>
+
 <!--  
 
 <style type="text/css">
