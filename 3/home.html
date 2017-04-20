@@ -2,17 +2,23 @@
 <div class="parallax-container">
     <div class="parallax"><img src="images/prx1.jpg"></div>
  <div class="row">
-      <div class="input-field col s6">
+      <div class="input-field col s12 col l8">
           <h1 class="header" style="color:white;text-align: center;padding-top: 10%; "> Escuela Colaborativa Musical Sur</h1>
       </div>
-      <div class="  col s6">
+      <div id="cardpostular" class="col l4">
            
-           <div class="card-panel push-right right" style=" margin:10%;text-align: right" >
+           <div class="card-panel push-right right center" style="margin:8%;" >
                 Participa en la grabación y formación en nuestra escuela de producción musical... <br><br>
                 <button id="postular" class="btn waves-effect waves-light red" type="submit">Postula aqui
-                <i class="material-icons right"  ">new_releases</i>
+                <i class="material-icons right">new_releases</i>
                 </button>
           </div>
+
+      </div>
+      <div id="btnpostular" class="center col s12">
+           <button id="postular" class="btn waves-effect waves-light red" type="submit">Postula aqui
+                <i class="material-icons right">new_releases</i>
+                </button>
       </div>
 </div>
 </div>  
@@ -74,6 +80,16 @@
   opacity: .6;
   z-index: -10;
  
+}
+@media only screen and (max-width : 992px) {
+  #cardpostular {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #btnpostular {
+    display:none;
+  }
 }
 </style>
 
