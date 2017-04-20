@@ -1,3 +1,10 @@
+p, h5,h2,a,li,h1,h3,h4,button
+{
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: justify;
+}
+
+
 header, main, footer {
   padding-left: 300px;
   /*font-size: 0px !important*/
@@ -36,10 +43,7 @@ header, main, footer {
 .parallax-container {
   height: 400px;
 }
-p, h5
-{
-  text-align: justify;
-}
+
 /* unvisited link */
 a:link {
   color: white;
