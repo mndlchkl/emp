@@ -4,7 +4,7 @@ $nombre= $_POST['contact-name'];
 $correo= $_POST['contact-email'];
 $asunto= 'Consulta atráves de ecpm.cl';
 $cuerpo=   wordwrap($_POST['contact-description'], 70);  
-$destino= "eliasnegronh@gmail.com";
+$destino= "ecpmsur.info@gmail.com";
 $correo2= "franruiz21@gmail.com";
 // $headers = "From: $nombre <$correo>\r\n"; //Quien envia?
 // $headers .= "X-Mailer: PHP5\n";
@@ -17,7 +17,7 @@ $headers .= 'From:' . $correo. "\r\n"; // Sender's Email
 $headers .= 'Cc:' . $correo2. "\r\n"; // Carbon copy to Sender
  
  
-if( !mail($destino,$asunto,$cuerpo,$headers) ){
+if( !mail($destino,$asunto,$cuerpo.'...  ATTE:'.$nombre,$headers) ){
 		echo "No se pudo enviar intente contactarse al correo ".$destino.' .';
 }else{
 	echo "Su consulta fue recibida, recibirá una respuesta al correo prontamente. Gracias.";

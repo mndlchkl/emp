@@ -31,9 +31,36 @@ if ($guardar==0){
 
 	 if($result = $mysqli->query($query)){ 
   		  echo   "Postulación recibida. pronto tendrás noticias sobre los resultados"; 
+  		  /**ENVIAR CORREO**/
+			$cuerpo= 'Postulante: '.$name.' '.$last_name   . "\r\n";
+			$cuerpo.= 'Rut: '.$rut . "\r\n";
+			$cuerpo.= 'Correo:'.$email . "\r\n";
+			$cuerpo.= 'Telefono:'.$phone . "\r\n";
+			$cuerpo.= 'Proyecto:'.$project . "\r\n"; 
+			$cuerpo.= 'Experiencia:'.$experience . "\r\n";
+			$cuerpo.= 'Motivaciones:'.$motivations . "\r\n";
+			$cuerpo.='Links:'.$music_work_url.', '.$music_work_url2.', '.$music_work_url3 . "\r\n";
+
+			$asunto= 'Inscripción atráves de ecpm.cl';
+			$cuerpo=   wordwrap($cuerpo, 70);  
+			$destino= "ecpmsur.info@gmail.com";
+			$correo2= "franruiz21@gmail.com";
+			 
+
+			$headers = 'MIME-Version: 1.0' . "\r\n";
+			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+			$headers .= 'From:' . $email. "\r\n"; // Sender's Email
+			$headers .= 'Cc:' . $correo2. "\r\n"; // Carbon copy to Sender
+			mail($destino,$asunto,$cuerpo,$headers) ;
+
 	 }else echo $mysqli->errno;
  }else echo "El rut ya está registrado. (Alguien registro un proyecto usando este rut.)";
  mysqli_close($mysqli);
+
+
+
+		
+
 ?>
 
 
